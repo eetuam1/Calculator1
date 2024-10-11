@@ -44,4 +44,3 @@ public class CalculatorTest {
         assertEquals(Integer.MIN_VALUE, testInstance.addNumbers(Integer.MIN_VALUE, 0));
     }
 }
-
