@@ -1,4 +1,3 @@
-
 # Use an official Maven image as a parent image
 FROM maven:latest
 
@@ -15,7 +14,7 @@ COPY pom.xml /app/
 COPY . /app/
 
 # Package your application
-RUN mvn package
+RUN mvn clean package
 
 # Run the main class (assuming your application has a main class)
 CMD ["java", "-jar", "target/Calculator1.jar"]

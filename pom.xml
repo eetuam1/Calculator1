@@ -15,7 +15,7 @@
     </properties>
 
     <build>
-        <finalName>Calculator1</finalName> <!-- Set the final name of the JAR -->
+        <finalName>Calculator1</finalName>
         <plugins>
             <!-- Compiler Plugin for setting the Java version -->
             <plugin>
@@ -36,7 +36,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>Main</mainClass> <!-- Specify your main class -->
+                            <mainClass>Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -89,4 +89,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
 </project>
