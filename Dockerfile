@@ -1,4 +1,3 @@
-
 # Use an official Maven image as a parent image
 FROM maven:latest
 
@@ -17,5 +16,5 @@ COPY . /app/
 # Package your application
 RUN mvn package
 
-# Run the main class (assuming your application has a main class)
-CMD ["java", "-jar", "target/Test.jar"]
+# Run the jar (Ensure the jar path is correct)
+CMD ["java", "-jar", "target/Test-1.0-SNAPSHOT.jar"]

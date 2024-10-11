@@ -65,6 +65,34 @@ pipeline {
                 }
             }
         }
+
+        stage('Build Docker Image') {
+            steps {
+                script {
+                    try {
+                        // Build Docker image
+                        bat 'docker build -t calculator-app .'
+                    } catch (Exception e) {
+                        echo "Docker build failed: ${e}"
+                        throw e  // Stop the pipeline if Docker build fails
+                    }
+                }
+            }
+        }
+
+        stage('Run Docker Container') {
+            steps {
+                script {
+                    try {
+                        // Run the Docker container
+                        bat 'docker run --rm calculator-app'
+                    } catch (Exception e) {
+                        echo "Docker run failed: ${e}"
+                        throw e  // Stop the pipeline if Docker run fails
+                    }
+                }
+            }
+        }
     }
 
     post {
