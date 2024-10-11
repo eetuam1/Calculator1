@@ -15,7 +15,7 @@
     </properties>
 
     <build>
-        <finalName>Test</finalName>
+        <finalName>Test</finalName> <!-- Updated the name of the final jar -->
         <plugins>
             <!-- Compiler Plugin for setting the Java version -->
             <plugin>
@@ -36,14 +36,11 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>Calculator1</mainClass> <!-- Correct main class -->
+                            <mainClass>Calculator</mainClass> <!-- Corrected the main class to 'Calculator' -->
                         </manifest>
                     </archive>
                 </configuration>
             </plugin>
-
-
-            <!-- Other plugins like compiler, jar, jacoco... -->
 
             <!-- Surefire Plugin for running tests -->
             <plugin>
@@ -58,7 +55,6 @@
                     </includes>
                 </configuration>
             </plugin>
-
 
             <!-- JaCoCo Plugin for code coverage -->
             <plugin>
