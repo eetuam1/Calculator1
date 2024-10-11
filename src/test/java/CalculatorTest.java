@@ -2,7 +2,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 public class CalculatorTest {
-
+    // Create an instance of Calculator to test
     Calculator testInstance = new Calculator();
 
     @Test
