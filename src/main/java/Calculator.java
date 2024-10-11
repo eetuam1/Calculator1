@@ -5,22 +5,24 @@ public class Calculator {
     Calculator() {}
 
     public static void main(String[] args) {
-        Calculator test = new Calculator();  // Create an instance of Test
-        test.run();              // Call the run method
+        Calculator calculator = new Calculator();  // Create an instance of Calculator
+        calculator.run();  // Call the run method
     }
 
     // Method to handle input and perform addition
     public void run() {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter the first number ");
+        System.out.println("Enter the first number: ");
         int num1 = sc.nextInt();
 
-        System.out.println("Enter the second number");
+        System.out.println("Enter the second number: ");
         int num2 = sc.nextInt();
 
         int sum = addNumbers(num1, num2);
         System.out.println("Here is the sum: " + sum);
+
+        sc.close();  // Closing the scanner to avoid resource leaks
     }
 
     // Non-static method to add numbers
