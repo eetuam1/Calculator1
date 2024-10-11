@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Calculator calculator = new Calculator(); // Create an instance of the Calculator
+        CalculatorCalc calculatorCalc = new CalculatorCalc(); // Create an instance of the Calculator
         boolean running = true; // Control variable for the loop
 
         // Main application loop
@@ -26,7 +26,7 @@ public class Main {
                         System.out.print("Enter the second number: ");
                         int num2 = scanner.nextInt();
 
-                        int sum = calculator.addNumbers(num1, num2); // Call the method to add numbers
+                        int sum = calculatorCalc.addNumbers(num1, num2); // Call the method to add numbers
                         System.out.println("Here is the sum: " + sum);
                         break;
                     case 2:
